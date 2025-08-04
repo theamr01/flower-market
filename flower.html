@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Flower Market</title>
 </head>
 <body class="mx-4 md:mx-36">
@@ -34,8 +34,8 @@
 
     <main>
         <!-- Our plants -->
-        <section>
-            <div class="text-center mb-12 mt-28">
+        <section class="mt-16 md:mt-28">
+            <div class="text-center mb-12">
                 <h4 class="text-[clamp(1.5rem,6.15vw,3.15rem)] font-noto font-bold mb-3.5"><span class="text-[rgba(233,90,8,1)]">Our</span> Plants</h4>
                 <p class="text-[clamp(.875rem,3.6vw,1.5rem)] text-[rgba(0,0,0,0.5)] max-w-4xl mx-auto">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
@@ -106,6 +106,39 @@
                 </ul>
             </div>
         </section> 
+
+        <!-- Latest deal -->
+        <section class="mb-10 md:mb-28">
+            <div class="text-center mb-12 mt-16 md:mb-28 md:mt-36">
+                <h4 class="text-[clamp(1.5rem,6.15vw,3.15rem)] font-noto font-bold mb-3.5"><span  class="text-[rgba(233,90,8,1)]">Latest </span>Deal</h4>
+                <p class="text-[clamp(.875rem,3.6vw,1.5rem)] text-[rgba(0,0,0,0.5)] max-w-4xl mx-auto">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 md:grid-rows-2">
+                <div class="bg-[url('./assets/deal-bloom.png')] bg-center bg-cover rounded-xl w-full flex flex-col justify-center text-center items-center h-52">
+                    <h5 class="font-noto text-xl font-bold text-white">60% Off | Bloom Plant</h5>
+                    <Button class="font-noto text-[16px] px-6 py-3 font-semibold text-white hover:cursor-pointer">Shop Now</Button>
+                </div>
+                <div class="bg-[url('./assets/deal-ana.png')] bg-center bg-cover rounded-xl w-full flex flex-col justify-center text-center items-center h-52 md:col-start-1">
+                    <h5 class="font-noto text-xl font-bold text-white">30% Off | Ana Plant</h5>
+                    <Button class="font-noto text-[16px] px-6 py-3 font-semibold text-white hover:cursor-pointer">Shop Now</Button>
+                </div>
+                <div class="bg-[url('./assets/deal-zabo.png')] bg-center bg-cover rounded-xl w-full flex flex-col justify-center text-center items-center h-52 md:row-span-2 md:col-span-2 md:col-start-2 md:row-start-1 md:h-full">
+                    <h5 class="font-noto text-xl font-bold text-white md:text-[40px]">25% Off | Zabo Plant</h5>
+                    <Button class="font-noto text-[16px] px-6 py-3 font-semibold text-white hover:cursor-pointer md:text-[28]">Shop Now</Button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join -->
+        <section class="-mx-4 md:-mx-36 bg-[url('./assets/news-letter-bg.png')] bg-center bg-cover w-screen h-72 md:h-[520px] flex items-center justify-center">
+            <div>
+                <h4 class="text-[clamp(1.5rem,6.15vw,3.15rem)] font-noto font-bold text-center text-white mb-5">Join the colorful Bunch</h4>
+                <form action="" class="flex mx-auto w-full justify-center md:w-[830px]">
+                    <input type="email" name="" id="" placeholder="Write email.." class="bg-white px-4 py-1.5 w-7/12 md:w-8/12">
+                    <button type="submit" class="bg-[#E95A08] text-[16px] font-semibold text-white px-6 py-4 w-5/12 md:w-4/12">Subscribe</button>
+                </form>
+            </div>
+        </section> 
     </main>
 </body>
-</html>
+</html> 
